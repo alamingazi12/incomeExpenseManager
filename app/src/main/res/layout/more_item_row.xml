@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="76dp">
+    <TextView
+        android:id="@+id/mttypetransaction"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:text="HouseHold"
+        android:fontFamily="@font/amaranth"
+        android:layout_toEndOf="@+id/mdatelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/mdescription"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:text="Description"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_toEndOf="@+id/mdatelayout"
+        android:layout_below="@+id/mttypetransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#00c853"
+        android:text="10000"
+
+        android:layout_marginEnd="13dp"
+        android:fontFamily="@font/amaranth"
+        android:layout_centerVertical="true"
+       android:layout_alignParentEnd="true"
+        android:id="@+id/mamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:id="@+id/mdatelayout"
+        android:layout_marginLeft="10dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/mwday"
+            android:text="Sat"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/mday"
+            android:textColor="#fff"
+            android:text="15"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/mwday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/more_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="2dp"
+        android:textColor="#00c853"
+        android:fontFamily="@font/amaranth"
+        android:layout_marginBottom="27dp"
+        android:layout_toStartOf="@+id/mamount"
+        android:text="BDT" />
+
+
+</RelativeLayout>

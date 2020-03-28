@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="68dp">
+    <ImageView
+        android:id="@+id/cimage"
+        android:layout_margin="4dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/images"
+        android:layout_width="60dp"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:id="@+id/listcategoryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="15dp"
+
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/cimage"
+        android:text="Household"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/categoryview"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/listcategoryname"
+        android:layout_centerVertical="true"
+
+
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="12dp"
+        android:layout_toEndOf="@+id/cimage"
+        android:background="@drawable/view_background1" />
+
+    <TextView
+        android:id="@+id/camount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoryview"
+        android:layout_marginStart="2dp"
+
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="2dp"
+
+        android:layout_toEndOf="@+id/currency_category"
+        android:text="1000"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/currency_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/categoryview"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_toEndOf="@+id/cimage"
+        android:text="BDT" />
+
+</RelativeLayout>

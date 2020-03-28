@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_row_layout">
+
+    <TextView
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="#000"
+       android:gravity="center"
+        android:id="@+id/rtdescription"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/rtdate"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/rtondate"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/rttranstype"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/reportamount"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+<RelativeLayout
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:gravity="center"
+    android:layout_weight=".7"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"/>
+
+    <ImageView
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:id="@+id/editview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/ic_delete_black_24dp" />
+
+</LinearLayout>

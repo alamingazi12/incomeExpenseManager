@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".TransactionActivity">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/inex_card"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:id="@+id/overviewid"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+
+                  android:fontFamily="monospace"
+                  android:text="Overview"
+                  android:textColor="#000"
+                  android:textSize="17dp" />
+
+              <RelativeLayout
+                  android:layout_marginBottom="2dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_centerHorizontal="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:id="@+id/savingtext"
+                      android:text="Savings"
+                      android:textColor="#ffea00"
+                      android:textSize="16dp"
+                      android:fontFamily="sans-serif-condensed-medium"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+                  <TextView
+                      android:id="@+id/tcurrency"
+                      android:text="BDT"
+                      android:textSize="16dp"
+                      android:textColor="#ffea00"
+                      android:fontFamily="sans-serif-condensed-medium"
+                      android:layout_toEndOf="@+id/savingtext"
+                      android:layout_marginLeft="2dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      />
+                  <TextView
+                      android:id="@+id/tsavings"
+                      android:text="20000"
+                      android:textSize="16dp"
+                      android:textColor="#ffea00"
+                      android:fontFamily="sans-serif-condensed-medium"
+                      android:layout_toEndOf="@+id/tcurrency"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      />
+
+
+              </RelativeLayout>
+
+
+          </RelativeLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+
+                <View
+                    android:id="@+id/viewid"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#aeaeae"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="10dp" />
+
+                <TextView
+
+                    android:id="@+id/incomes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="monospace"
+                    android:text="Income"
+                    app:layout_constraintEnd_toStartOf="@+id/viewid"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/incomestext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="200000"
+                    android:textColor="#00c853"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/viewid"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tincome_currency"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+
+
+                    android:id="@+id/expense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="monospace"
+                    android:text="Expense"
+                    app:layout_constraintBottom_toTopOf="@+id/expensetext"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/viewid"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/expensetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="10000"
+                    android:textColor="#d50000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/expense_currency" />
+
+                <TextView
+                    android:id="@+id/expense_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="BDT"
+                    android:textColor="#d50000"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/expensetext"
+                    app:layout_constraintStart_toStartOf="@+id/expense"
+                    app:layout_constraintTop_toBottomOf="@+id/expense" />
+
+                <TextView
+                    android:id="@+id/tincome_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="BDT"
+                    android:textColor="#00c853"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/incomestext"
+                    app:layout_constraintStart_toStartOf="@+id/incomes"
+                    app:layout_constraintTop_toTopOf="@+id/incomes" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_below="@+id/inex_card"
+            android:id="@+id/item3_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        android:singleLine="true"
+                        android:text="Last 3 Records"
+                        android:paddingLeft="10dp"
+
+                        android:fontFamily="@font/amaranth"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:id="@+id/recordcontainer3item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:id="@+id/showmoretext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="All Details"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/item3_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/typesumlistcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+      </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        app:fab_addButtonColorNormal="#8c9eff"
+        app:fab_addButtonColorPressed="#8c9eff"
+        app:fab_labelStyle="@style/Custom_Style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabexpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fff"
+            app:fab_icon="@drawable/ic_income"
+            app:fab_size="mini"
+            app:fab_title="Add Expense" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabincome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fff"
+            app:fab_icon="@drawable/ic_file_expense"
+            app:fab_size="mini"
+            app:fab_title="Add Income" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</RelativeLayout>
